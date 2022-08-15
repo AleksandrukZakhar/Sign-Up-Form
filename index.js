@@ -9,4 +9,5 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   error.textContent = "Passwords do not match";
+  error.classList.replace("hide", "show");
 });

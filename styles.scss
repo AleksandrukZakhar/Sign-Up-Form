@@ -24,7 +24,7 @@ $white-primary: hsl(0, 0%, 100%);
 .sidebar {
     @include flex();
 
-    background-image: url("./assets/tokyo.jpg");
+    background-image: url("./assets/tokyo.webp");
     height: 100vh;
     width: 30vw;
 
@@ -111,6 +111,15 @@ $white-primary: hsl(0, 0%, 100%);
                     color: red;
                     position: relative;
                   }
+
+                  .hide {
+                    display: none;
+                  }
+
+                  .show {
+                    display: block;
+                  }
+
             }
         }
 

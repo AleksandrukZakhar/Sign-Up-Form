@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Some description" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="./assets/tokyo.webp"
+      type="image/webp"
+    />
+    <script async src="index.js"></script>
     <title>Sign-Up Form</title>
   </head>
   <body>
     <div class="sidebar">
       <div class="text-container">
-        <img src="./assets/odin-logo.png" class="logo" />
+        <img src="./assets/logo.webp" class="logo" alt="logo" />
         <h1 class="title">Odin</h1>
       </div>
     </div>
@@ -62,7 +71,7 @@
             <div class="input-container">
               <label for="pass">Password</label>
               <input type="password" id="pass" minlength="4" required />
-              <div id="error"></div>
+              <div class="hide" id="error"></div>
             </div>
             <div class="input-container">
               <label for="confirm">Confirm Password</label>
@@ -74,6 +83,5 @@
         <p>Already have an account? <a href="#">Log in</a></p>
       </div>
     </main>
-    <script src="index.js"></script>
   </body>
 </html>
