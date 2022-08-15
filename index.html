@@ -9,35 +9,50 @@
   </head>
   <body>
     <div class="sidebar">
-      <h1><img src="./assets/odin-logo.png" /> Odin</h1>
+      <div class="text-container">
+        <img src="./assets/odin-logo.png" class="logo" />
+        <h1 class="title">Odin</h1>
+      </div>
     </div>
     <main>
       <div class="container">
-        <div>
+        <div class="container-text-container">
           <p>
             This is not a real service! You know you need something like this in
             your life to help you realize your deepest dreams. Sign up know to
             get started.
           </p>
-          <p>You know you want to.</p>
+          <span>You know you want to.</span>
         </div>
         <form action="">
-          <div class="inpt-container">
-            <h2>Lets do this!</h2>
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" />
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" />
-            <label for="email">Email</label>
-            <input type="email" id="email" />
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" />
-            <label for="pass">Password</label>
-            <input type="password" id="pass" />
-            <label for="confirm">Confirm Password</label>
-            <input type="password" id="confirm" />
+          <h2>Lets do this!</h2>
+          <div class="form-container">
+            <div class="input-container">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" />
+            </div>
+            <div class="input-container">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" />
+            </div>
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="input-container">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" />
+            </div>
+            <div class="input-container">
+              <label for="pass">Password</label>
+              <input type="password" id="pass" />
+            </div>
+            <div class="input-container">
+              <label for="confirm">Confirm Password</label>
+              <input type="password" id="confirm" />
+            </div>
           </div>
-          <button type="submit">Create Account</button>
+          <button type="submit" class="submit">Create Account</button>
         </form>
         <p>Already have an account? <a href="#">Log in</a></p>
       </div>
